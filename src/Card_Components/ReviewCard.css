@@ -1,0 +1,49 @@
+.reviewcard {
+    display: flex;
+    flex-direction: column;
+    background-color: #EDEFEE;
+    padding: 1.5rem 1.2rem 1.5rem;
+    gap:1.2rem;
+}
+
+.rating {
+    display: flex;
+    width: 100%;
+    height: 25px;
+    gap:0.2rem;
+}
+
+.rating img{
+    height: 100%;
+}
+
+.reviewer-photo {
+    display: block;
+    height: 50px;
+    width: 50px;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviewcard > div:nth-child(2){
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+}
+
+.reviewcard > div:nth-child(2) > span{
+    font-size: 0.9rem;
+}
+
+.reviewcard > span {
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 900px) {
+    .rating {
+        justify-content: space-between;
+        height: 20px;
+        gap: auto;
+    }
+}

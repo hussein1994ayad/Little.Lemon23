@@ -1,0 +1,61 @@
+
+.bookingform {
+ background-image: url(/src/Assets/book\ img.jpg);
+ background-size: cover;
+ background-position: center;
+ height: 100vh;
+
+}
+.bookingform form {
+    display: flex;
+    max-width: 400px;
+    height: 600px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 45px 0;
+    background-color: rgb(210, 222, 234);
+    opacity: 0.9;
+    border-radius: 12px;
+
+    
+}
+.make {
+    padding: 10px 90px;
+    border: none;
+    border-radius: 30px;
+    background-color: #f4ce14;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+input[type=date]{
+    padding: 15px 35px;
+    border-radius: 20px;
+    border: none;
+}
+input[type=number]{
+    padding: 8px 30px;
+    border-radius: 20px;
+    border: none;
+}
+
+input:last-of-type:hover {
+    background-color: rgba(0, 0, 0, 0.773);
+    color: #f4ce14;
+    border: none;
+}
+select {
+    padding: 5px 20px;
+    border-radius: 15px;
+    border: none;
+}
+
+.hu {
+    background-color: transparent;
+    width: 40px;
+    height:  40px;
+    margin-bottom: 8.2rem;
+}

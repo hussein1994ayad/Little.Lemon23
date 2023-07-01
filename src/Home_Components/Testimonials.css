@@ -1,0 +1,33 @@
+.testimonials-background {
+    background-color: var(--secondary-dark);
+}
+
+.testimonials {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials > h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 58px;
+    color: var(--secondary-bright);
+    grid-column: span 12;
+    justify-self: center;
+}
+
+.testimonials > div {
+    gap:1rem
+}
+
+.reviewcard {
+    grid-column: span 3;
+}
+
+@media screen and (max-width: 900px) {
+    .reviewcard {
+        grid-column: span 2;
+    }
+}

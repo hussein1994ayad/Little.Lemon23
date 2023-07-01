@@ -1,0 +1,72 @@
+.abouts-background {
+    overflow: hidden;
+}
+
+.abouts {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.abouts > div {
+    grid-column: span 4;
+}
+
+.abouts h1, .abouts h2 {
+    white-space: nowrap;
+}
+
+.abouts h1 {
+    color:var(--primary-dark);
+    font-size: 50pt;
+}
+
+.abouts h2 {
+    color:var(--highlight-dark);
+    font-size: 30pt;
+}
+
+.abouts p {
+    color: black;
+}
+
+.abouts > img {
+    position: absolute;
+    grid-column: 7/ span 6;
+    justify-self: end;
+    object-fit: cover;
+    width: 280px;
+    height: 390px;
+    border-radius: 13px;
+}
+
+.abouts > img:last-of-type {
+    z-index: 1;
+    transform: translate(-220px, 100px);
+}
+
+.abouts > div span {
+    margin-top: 1rem;
+}
+
+h2 + p {
+    margin: 1rem 0 1rem;
+}
+
+@media screen and (max-width: 900px) {
+    .abouts {
+        gap: 1rem;
+    }
+    .abouts > img {
+        position: relative;
+        grid-column: span 2;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .abouts > img:last-of-type {
+        transform: translate(0, 0);
+    }
+    h2 + p {
+        margin: 1rem 0 0;
+    }
+}

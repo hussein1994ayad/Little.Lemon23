@@ -1,0 +1,43 @@
+.highlights {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.highlights > div:first-child {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.highlights > div:last-child {
+    gap: 1rem;
+}
+
+.highlights > div:first-child h1{
+    color: var(--highlight-dark);
+    font-size: 70px;
+    grid-column: span 8;
+}
+
+.highlights > div:first-child a{
+    grid-column: span 4;
+    justify-self: end;
+    align-self: center;
+}
+
+.menu-card {
+    grid-column: span 4;
+}
+
+@media screen and (max-width: 900px) {
+    .highlights > div:first-child h1{
+        font-size: 50px;
+        grid-column: span 3;
+    }
+    
+    .highlights > div:first-child a{
+        grid-column: span 1;
+        justify-self: end;
+        align-self: center;
+    }
+}

@@ -1,0 +1,66 @@
+.Auth-form-container {
+    /* max-width: 960px; */
+    margin: 0  auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #2d3e50;
+    color: aliceblue;
+   
+}
+
+.form-group{
+    padding: 19px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+.form-group label {
+    margin-top: 0.55rem;
+    margin-right: 1.30rem;
+}
+
+.Auth-form-title{
+    text-align: center;
+    margin-bottom: 2.4rem;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    
+}
+
+.btn {
+    margin: 0 auto;
+    padding: 10px 90px;
+    border: none;
+    border-radius: 30px;
+    background-color: #f4ce14;
+    margin-left: 51px;
+    margin-top: 2.5rem;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.773);
+    color: #f4ce14;
+}
+
+.em label{
+    margin-left: 10px;
+}
+.pa label{
+    margin-left: 23px;
+}
+
+.form-group-pass {
+    text-align: center;
+    font-size: medium;
+    margin-left: 11px;
+}
+
+.Auth-form p a {
+    color: #f4ce14; 
+    margin-left: 0.25rem;
+    text-decoration: none;
+}

@@ -1,0 +1,73 @@
+.main-background {
+    background-color: var(--primary-dark);
+    height: 490px;
+    overflow: hidden;
+}
+
+.main {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.main > div {
+    grid-column: span 4;
+}
+
+.main h1, .main h2 {
+    white-space: nowrap;
+}
+
+.main h1 {
+    color:var(--primary-bright);
+    font-size: 64pt;
+}
+
+.main > img {
+    position: absolute;
+    grid-column: 7/ span 6;
+    justify-self: end;
+    object-fit: cover;
+    width: 400px;
+    height: 490px;
+    border-radius: 13px;
+}
+
+.main > div span {
+    margin-top: 1rem;
+}
+
+h2 + p {
+    margin: 1rem 0 1rem;
+    color: white;
+}
+
+@media screen and (max-width: 900px) {
+    .main > img {
+        margin-top: 2rem;
+        position: relative;
+        justify-self:auto;
+        grid-column: span 4;
+        object-fit: cover;
+        width: 100%;
+        height: 350px;
+        border-radius: 13px;
+    }
+
+    .main-background {
+        height:auto;
+    }
+
+    .main h1 {
+        font-size: 50pt;
+    }
+
+    .main h2 {
+        font-size: 30pt;
+    }
+}
+
+.button-bright:hover{
+    background-color: rgba(0, 0, 0, 0.773);
+    color: #f4ce14;
+    border: none;
+}
